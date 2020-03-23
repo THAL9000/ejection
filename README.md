@@ -1,6 +1,6 @@
 # Ejection
 Ejection is a software to eject a user from the network with the Arpspoofing attack
-### __________________________________________________________________________________
+
 ## Use
 Use the software with the followings instructions:
 
