@@ -3,6 +3,14 @@ Ejection is a software to eject a user from the network with the Arpspoofing att
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
+## Installation
+
+```
+git clone https://github.com/THAL9000/ejection.git && cd ejection
+
+```
+
+
 ## Use
 Use the software with the followings instructions:
 
