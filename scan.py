@@ -1,3 +1,4 @@
+#coding
 import platform
 import subprocess as sp
 import socket
@@ -24,7 +25,6 @@ class scan:
               print(Fore.GREEN+"-------------")
               cmd = 'arp -a '+str(IP)+'.'+str(i)+'.'+str(a)
               returned_output = subprocess.check_output((cmd),shell=True,stderr=subprocess.STDOUT)
-              print(returned_output)
               output=returned_output.decode()
               output=output.split('[')[0]
               output=output.split("at", 1)[-1]
