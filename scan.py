@@ -1,5 +1,3 @@
-#coding
-import platform
 import subprocess as sp
 import socket
 import time
@@ -21,7 +19,9 @@ class scan:
            status,result = sp.getstatusoutput("ping -c1 -w2 " + str(IP)+"."+str(i)+"."+str(a))
            if status == 0:
               print(Fore.GREEN+"A machine was found :" + str(IP)+"."+str(i)+"."+str(a))
-              print (Fore.GREEN+"Machine name ="+socket.getfqdn(str(IP)+str(i)+"."+str(a)))
+              name_machine=socket.gethostbyaddr(str(IP)+"."+str(i)+"."+str(a))
+              machine = name_machine[0]
+              print (Fore.GREEN+"Machine name ="+str(machine))
               print(Fore.GREEN+"-------------")
               cmd = 'arp -a '+str(IP)+'.'+str(i)+'.'+str(a)
               returned_output = subprocess.check_output((cmd),shell=True,stderr=subprocess.STDOUT)
