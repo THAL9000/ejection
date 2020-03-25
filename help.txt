@@ -1,0 +1,7 @@
+[ATTACK WITH SCAN] 
+ --scan
+[ATTACK WITHOUT SCAN] 
+ --ip_box ip 
+ --ip_attack ip 
+ --mac_attack mac_victim 
+ --time time_minutes
