@@ -9,9 +9,9 @@ from arpspoof import arpspoof
 def main():
     present=["Software to eject a user from the network","version 0.1"]
     file = open("ascii.txt", "r")
-    #for x in file:
-        #print(Fore.GREEN + x)
-        #time.sleep(1)
+    for x in file:
+        print(Fore.GREEN + x)
+        time.sleep(1)
     for i in range(0,2):
         print(Fore.BLUE+present[i])  
     if len(sys.argv)==1 or sys.argv[1]=="help":
