@@ -5,6 +5,8 @@ Ejection is a software to eject a user from the network with the Arpspoofing att
 
 ## Installation
 
+this tool can only be used with linux 
+
 ```
 git clone https://github.com/THAL9000/ejection.git && cd ejection
 
